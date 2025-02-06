@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stay</title>
+
+    <script
+    src="https://kit.fontawesome.com/24c494a6b6.js"
+    crossorigin="anonymous"
+  ></script>
+    <link rel="stylesheet" href="./styles/stay.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+  
+</head>
+<body> 
+    <div id="header"></div>
+
+    <div id="products_container">
+        <div id="outermost_left">
+            <div id="outer_up">
+                <div id="location_input_div">
+                </div>
+            </div>
+
+           <div id="homepagebox1_b">
+
+            <div id="stay_traveller_rooms">
+            
+            <div> <input class="input_icon"type="text" id="inputbox1" placeholder="Going to">
+            <div id="location_suggestion_div"></div>
+
+              <input class="checkin_icon" type="date" id="inputbox2" required>
+              <input class="checkout_icon" type="date" id="inputbox3" required>
+            </div>
+            <div id="travellers_div">
+            <div id="trveller_icon"> <i class="fa-solid fa-user"></i></div>
+                  <div id="traveller_inside">1 Room, </div>
+                  <div id="no_of_travellers"></div>
+              </div>
+
+              <div><button id="inputboxbutton">Search</button> </div>
+            </div>
+                        
+            <div id="travellers_display" style="display:none">
+            <h5 id="">Travellers</h5>
+            <p>Room 1 </p>
+            
+            
+            <div id="counter_travellers">
+                <div>Adults</div>
+                <div id="counter">
+                    <div id="add_travellers">+</div>
+                    <div id="display_count">1</div>
+                    <div id="remove_travellers">-</div>
+                </div>
+            </div>
+            
+            <button id="count_doneButton">Done</button>
+            </div>
+
+            </div>
+
+            
+            <div id="outer_down">
+                <div id="outer_down_left_big">
+                    <div id="products_map">
+
+                        <div class="gmap_canvas">
+                            <iframe 
+                               
+                                id="gmap_canvas" 
+                                frameborder="0" 
+                                scrolling="no" 
+                                marginheight="0" 
+                                marginwidth="0">
+                            </iframe>                        
+                        </div>
+                    </div>
+                    <hr>
+                    <div id="products_searchByProperty">
+                        <h3>Search by property name</h3>
+                        <input type="text" placeholder="e.g. Best Western">
+                    </div>
+                    <hr>
+                    <div id="products_filter_div">
+                        <h3>Filter By</h3>
+                        <h5>Star Ratings</h5>
+ 
+                       <label for="starRating1"><input type="radio" id="starRating1" name="star" value="1"> 1 Star</label><br><br>
+                       <label for="starRating2"><input type="radio" id="starRating2" name="star" value="2"> 2 Star</label><br><br>
+                       <label for="starRating3"><input type="radio" id="starRating3" name="star" value="3"> 3 Star</label><br><br>
+                       <label for="starRating4"><input type="radio" id="starRating4" name="star" value="4"> 4 Star</label><br><br>
+                       <label for="starRating5"><input type="radio" id="starRating5" name="star" value="5"> 5 Star</label><br><br>
+                    </div>
+                </div>
+                <div id="outer_down_right_big">
+                    <div id="totalProp_and_sort_div">
+                        <div id="noOfPropertiesDiv"></div>
+                        <div id="sortProductsDiv">
+                            <lable for="sortID">Sort By</lable>
+                            <select name="sort" id="sortID">
+                                <option value="">Recommended</option>
+                                <option  value="PRICE">Price (Low to High)</option>
+                                <option selected value="PRICE_HIGHEST_FIRST">Price (High to Low)</option>
+                                <option value="STAR_RATING_HIGHEST_FIRST">Ratings</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div id="products_append_div"></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="outermost_right">
+            <img src="https://tpc.googlesyndication.com/simgad/17447823249981941085?" alt="photo">
+            <img src="https://tpc.googlesyndication.com/simgad/611061976946598058?" alt="photo">
+        </div>
+    </div>
+    <div id="footer"></div>
+</body>
+</html>
+<script src="./scripts/stay.js" type="module"></script>
