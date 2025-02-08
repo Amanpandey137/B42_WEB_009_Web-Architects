@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Menu</title>
+    <link rel="stylesheet" href="support.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-btn {
+            background-color: #fff;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            padding: 10px 15px;
+        }
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            min-width: 200px;
+            padding: 10px 0;
+            list-style: none;
+        }
+        .dropdown-menu li {
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+        .dropdown-menu li:hover {
+            background: #f5f5f5;
+        }
+        .dropdown-menu i {
+            margin-right: 10px;
+            width: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <button class="dropdown-btn" onclick="toggleDropdown()">Shop travel <i class="fa fa-caret-down"></i></button>
+        <ul class="dropdown-menu" id="dropdownMenu">
+            <li><i class="fa fa-bed"></i> Stays</li>
+            <li><i class="fa fa-plane"></i> Flights</li>
+            <li><i class="fa fa-car"></i> Cars</li>
+            <li><i class="fa fa-box"></i> Packages</li>
+            <li><i class="fa fa-ticket"></i> Things to do</li>
+            <li><i class="fa fa-ship"></i> Cruises</li>
+            <li><i class="fa fa-tags"></i> Deals</li>
+            <li><i class="fa fa-users"></i> Groups & Meetings</li>
+            <li><i class="fa fa-book"></i> Expedia Magazine</li>
+            <li><i class="fa fa-credit-card"></i> One Key credit cards</li>
+        </ul>
+    </div>
+
+    <script>
+        function toggleDropdown() {
+            let menu = document.getElementById("dropdownMenu");
+            menu.style.display = menu.style.display === "block" ? "none" : "block";
+        }
+        document.addEventListener("click", function(event) {
+            let dropdown = document.getElementById("dropdownMenu");
+            let button = document.querySelector(".dropdown-btn");
+            if (!button.contains(event.target) && !dropdown.contains(event.target)) {
+                dropdown.style.display = "none";
+            }
+        });
+    </script>
+
+</body>
+</html>
