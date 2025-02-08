@@ -1,8 +1,7 @@
-  /* alert box style start */
-
   body{
     font-family: Arial, Helvetica, sans-serif;
 }
+
 #confirm {
   display: none;
   background-color: teal;
@@ -36,8 +35,6 @@
 #confirm .message {
   text-align: left;
 }
-
-/* aler box style end */
 
 #topLogo {
   border: 1px solid rgb(218, 207, 207);
@@ -96,6 +93,7 @@
   margin-bottom: 20px;
   display: flex;
 }
+
 #tickheckbox1,#tickheckbox2
 {
   margin-right: 10px;
@@ -147,8 +145,6 @@
 
 }
 
-/* //password strength style start */
-
 .passwordInput {
   margin-top: 5%;
   text-align: center;
@@ -167,5 +163,3 @@
   border-radius: 8px;
   font-size: 14px;
 }
-
-/* //password strength style end */
