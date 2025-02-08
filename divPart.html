@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Slider</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .hotel-container {
+            width: 85%;
+            height: 85vh;
+            background-image: url("https://forever.travel-assets.com/flex/flexmanager/mediaasset/714087-0_2-BEX_GO_Alps_Therin-00539RGB.jpg?impolicy=fcrop&w=1200&h=514&p=1&q=high");
+            background-position: center;
+            background-size: cover;
+            display: flex;
+            gap: 15px;
+            overflow-x: auto;
+            scroll-behavior: smooth;
+            align-items: center;
+            padding: 30px;
+            margin: auto;
+            background-color: rgb(3, 63, 78);
+            position: relative;
+         
+        }
+        .hotel-container::-webkit-scrollbar{
+            display: none;
+        }
+        .hotel-card {
+            min-width: 25%;
+            height: 350px;
+            background: linear-gradient(90deg, rgb(151, 189, 201) 0%, rgb(159, 208, 224) 35%, rgb(128, 172, 194) 100%);
+            
+
+            opacity: 1px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            padding: 10px;
+            /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+            margin-top: 200px;
+            
+        }
+
+        .slider {
+            width: 100%;
+            height: 200px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .image-container {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .slider button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            font-size: 20px;
+            border-radius: 5px;
+        }
+
+        .slider .left {
+            left: 10px;
+        }
+
+        .slider .right {
+            right: 10px;
+        }
+
+        .hotel-info {
+            text-align: center;
+            padding: 10px;
+        }
+
+        .hotel-info h3 {
+            margin: 5px 0;
+        }
+
+        .hotel-info p {
+            margin: 2px 0;
+            font-size: 14px;
+            color: rgb(20, 20, 20);
+        }
+        .intro {
+            width: 80%;
+            /* background-color: rgba(214, 34, 34, 0.9); */
+            padding: 15px;
+            border-radius: 10px;
+           margin-top: -400px;
+           display: flex;
+           position: absolute;
+           justify-content: space-between;
+           position: fixed;
+           
+           
+        }
+           
+
+        .intro h1 {
+            font-size: 25px;
+            
+            
+        }
+
+        .intro span {
+            font-size: 16px;
+            color: rgb(10, 10, 10);
+           
+        }
+
+        .intro button {
+            background-color: #00e1ff;
+            
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+
+    </style>
+</head>
+<body>
+
+   
+    <div class="hotel-container">
+        <div class="intro">
+            <div>
+            <h1>Last-minute weekend deals </h1>
+            <span>Showing deals for:</span><span>14 Feb - 16 Feb</span>
+            </div>
+            <div>
+                <button>see all deals</button>
+            </div>
+
+        </div>
+       
+    </div>
+
+    <script>
+        function fetchHotels() {
+            fetch("https://expediaclone-default-rtdb.firebaseio.com/hotels.json")
+                .then(response => response.json())
+                .then(data => {
+                    if (!data) {
+                        console.error("No data found");
+                        return;
+                    }
+    
+                    const hotels = Object.values(data).filter(hotel => hotel && hotel.image && hotel.image.length > 0);
+    
+                    if (hotels.length === 0) {
+                        console.warn("No valid hotel data available.");
+                        return;
+                    }
+    
+                    displayHotels(hotels);
+                })
+                .catch(error => console.error("Error fetching data:", error));
+        }
+    
+        function displayHotels(hotels) {
+            const container = document.querySelector(".hotel-container");
+        
+    
+            hotels.forEach(hotel => {
+                const hotelCard = document.createElement("div");
+                hotelCard.classList.add("hotel-card");
+    
+                let currentImageIndex = 0;
+    
+                hotelCard.innerHTML = `
+                    <div class="slider">
+                        <button class="left"> <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M15 18l-6-6 6-6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg> </button>
+                        <div class="image-container">
+                            <img src="${hotel.image[currentImageIndex]}" alt="${hotel.name}"/>
+                        </div>
+                        <button class="right"><svg width="24" height="24" font-weight="bold" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M9 18l6-6-6-6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></button>
+                    </div>
+                    <div class="hotel-info">
+                        <h3>${hotel.name || "Unknown Hotel"}</h3>
+                        <p>${hotel.place || "Unknown Location"}</p>
+                        <p>Rent: ₹${hotel.rent_price || "N/A"}</p>
+                        <p>Discount: ${hotel.discount || "No Discount"}</p>
+                        <p>Rating: ⭐ ${hotel.rating || "Not Rated"}</p>
+                    </div>
+                `;
+    
+                const imgElement = hotelCard.querySelector(".image-container img");
+                const leftBtn = hotelCard.querySelector(".left");
+                const rightBtn = hotelCard.querySelector(".right");
+    
+                leftBtn.addEventListener("click", () => {
+                    currentImageIndex = (currentImageIndex - 1 + hotel.image.length) % hotel.image.length;
+                    imgElement.src = hotel.image[currentImageIndex];
+                });
+    
+                rightBtn.addEventListener("click", () => {
+                    currentImageIndex = (currentImageIndex + 1) % hotel.image.length;
+                    imgElement.src = hotel.image[currentImageIndex];
+                });
+    
+                container.appendChild(hotelCard);
+            });
+        }
+    
+        fetchHotels();
+    </script>
+    
+</body>
+</html>
