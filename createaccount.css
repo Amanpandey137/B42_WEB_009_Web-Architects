@@ -5,12 +5,10 @@
 #confirm {
   display: none;
   background-color: teal;
- 
   color: white;
   border: 1px solid #aaa;
   position: fixed;
   width: 350px;
-
   left: 50%;
   margin-left: -100px;
   padding: 30px 20px 20px 30px;
@@ -52,7 +50,6 @@
 }
 
 #detailContainer {
- 
   width: 400px;
   margin: auto;
   margin-top: 20px;
@@ -79,7 +76,6 @@
 
 #togglePassword {
   padding: 5px 5px 5px 0px;
-
   margin-top: 7px;
   color: black;
 }
@@ -100,8 +96,7 @@
 }
 
 #tAndC {
-  color:
-      #367be3;
+  color:#367be3;
 }
 
 #buttonCreateAccount {
@@ -115,8 +110,7 @@
 }
 
 #SigninSpan {
-  color:
-      #367be3;
+  color:#367be3;
 }
 
 #signinDiv {
@@ -133,16 +127,12 @@
   display: flex;
   text-align: center;
   justify-content: space-evenly;
-
   width: 50%;
   margin-bottom: 20px;
 }
 
 #logoDiv>div>img {
-
   width: 20px;
-
-
 }
 
 .passwordInput {
