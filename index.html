@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expedia Travel: Vacations, Cheap Flights, Airline Tickets & Airfares</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <nav>
+        <img src="https://www.expedia.co.in/_dms/header/logo.svg?locale=en_GB&siteid=27&2&6f9ec7db" alt="Expedia logo" width="126px" height="28px">
+        <button class="shopBtn"><h4>Shop travel</h4><i class="fa-solid fa-chevron-down"></i></button>
+        <button class="appBtn"><i class="fa fa-download"></i><p>Get the app</p></button>
+        <button class="engBtn"><i class='fas fa-globe'></i><h4>English</h4></button>
+        <a href="#" class="property"><h4>List your property</h4></a>
+        <a href="#" class="support"><h4>Support</h4></a>
+        <a href="#" class="trip"><h4>Trips</h4></a>
+        <a href="#" class="mess"><i class='fas fa-comment-alt' style='font-size:24px'></i></a>
+        <button class="signIn"><h4>Sign in</h4></button>
+        <button class="toggle">☰</button>
+    </nav>
+
+    <div class="searchtravel">
+        <div class="travelsource">
+            <button class="stayBtn">Stays</button>
+            <button class="flightBtn">Flights</button>
+            <button class="carBtn">Cars</button>
+            <button class="packBtn">Packages</button>
+        </div>
+        <div class="underline1"></div>
+        <div class="bookings">
+            <div class="whereto">
+                <i class='fas fa-map-marker-alt' style='font-size:24px'></i>
+                <div>
+                    <p class="light"><span>Where to?</span><br>India</p>
+                </div>
+            </div>
+            <div class="dates">
+                <i class='far fa-calendar-alt' style='font-size:24px'></i>
+                <div>
+                    <p class="light"><span>Dates</span><br>19 Feb - 21 Feb</p>
+                </div>
+            </div>
+            <div class="travellers">
+                <i class='fas fa-user-alt' style='font-size:24px'></i>
+                <div>
+                    <p class="light"><span>Travellers</span><br>2 Travellers, 1 room</p>
+                </div>
+            </div>
+            <button class="searchBtn">Search</button>
+            <div></div>
+            <div class="check"><input type="checkbox" id="flightCheck">Add a flight</div>
+            <div class="check"><input type="checkbox" id="carCheck">Add a car</div>
+        </div>
+    </div>
+
+    <!-- members -->
+    <div class="members">
+        <img src="https://a.travel-assets.com/egds/marks/onekey__mod__gold.svg" alt="" width="50px" height="50px">
+        <p>Members save 10% or more on over 100,000 hotels worldwide when signed in</p>
+        <button class="sign">Sign in now</button>
+    </div>
+
+    <!-- favourite stay -->
+    <p class="scrollHead">Discover your new favourite stay</p>
+    <div class="slider-container">
+        <button id="prevBtn" class="scroll-btn">❮</button>
+        <div class="image-slider">
+            <div class="slider-track">
+                <div class="slide"><img src="https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?q=80&w=1498&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                     alt="Image 1"><p>Apart hotel</p>
+                </div>
+                <div class="slide"><img src="https://images.unsplash.com/photo-1646207683956-e14593aa3bf4?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                    alt="Image 2"><p>Waterpark</p>
+                </div>
+                <div class="slide"><img src="https://images.unsplash.com/photo-1661174607003-d9d36388c916?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                    alt="Image 3"><p>Houseboat</p>
+                </div>
+                <div class="slide"><img src="https://images.unsplash.com/photo-1593714604578-d9e41b00c6c6?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                    alt="Image 4"><p>Villa</p>
+                </div>
+                <div class="slide"><img src="https://images.unsplash.com/photo-1591285713698-598d587de63e?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                    alt="Image 5"><p>All inclusive</p>
+                </div>
+                <div class="slide"><img src="https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                    alt="Image 6"><p>Apartment</p>
+                </div>
+                <div class="slide"><img src="https://images.unsplash.com/photo-1563911302283-d2bc129e7570?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                    alt="Image 7"><p>Resort</p>
+                </div>
+                <div class="slide"><img src="https://images.unsplash.com/photo-1603862026184-14a7f7b91026?q=80&w=1376&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                    alt="Image 8"><p>Cottage</p>
+                </div>
+                <div class="slide"><img src="https://images.unsplash.com/photo-1542848285-4777eb2a621e?q=80&w=1372&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                    alt="Image 9"><p>Spa</p>
+                </div>
+                <div class="slide"><img src="https://images.unsplash.com/photo-1642755622932-d1e0cb783dc5?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                    alt="Image 10"><p>Hot tub</p>
+                </div>
+                <div class="slide"><img src="https://images.unsplash.com/photo-1624964649310-8fa8af99b4e7?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                    alt="Image 11"><p>Sea View</p>
+                </div>
+                <div class="slide"><img src="https://plus.unsplash.com/premium_photo-1675745329954-9639d3b74bbf?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                    alt="Image 12"><p>Pool</p>
+                </div>
+            </div>
+        </div>
+        <button id="nextBtn" class="scroll-btn">❯</button>
+    </div>
+
+    <div class="memberPrice">
+        <img src="https://images.unsplash.com/photo-1596889382335-4d750e0bce46?q=80&w=1553&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" >
+        <div id="priceBox">
+            <p>Save instantly with Expedia Rewards</p>
+            <p>You can enjoy access to perks like Member Prices, save 10% or more on over 100,000 hotels worldwide.</p>
+            <button>Get Member Prices</button>
+        </div>
+    </div>
+
+    <p class="popularDest">Explore stays in popular destinations</p>
+    <div class="destType">
+        <button class="beachBtn">Beach</button>
+        <button class="cultureBtn">Culture</button>
+        <button class="skiBtn">Ski</button>
+        <button class="familyBtn">Family</button>
+        <button class="wellBtn">Wellness and Relaxation</button>
+    </div>
+    <div class="underline2"></div>
+    <div class="destPhoto">
+        <button id="prevBtn" class="scroll-btn">❮</button>
+        <div class="dest1">
+            <div class="dest2">
+                <div class="slideDest">
+                    <img src="https://e1.pxfuel.com/desktop-wallpaper/686/280/desktop-wallpaper-miscellaneous-greenroofs-landscape-andar-mawal-dams-nilshi-sahyadri-monsun.jpg" alt="mawal">
+                    <p>Mawal<br><span>Maharshtra, India</span></p>
+                </div>
+                <div class="slideDest">
+                    <img src="https://www.adotrip.com/public/images/city/master_images/5e4117880636f-Mahabaleshwar_Attractions.jpg" alt="mahabaleshwar">
+                    <p>Mahabaleshwar<br><span>Maharshtra, India</span></p>
+                </div>
+                <div class="slideDest">
+                    <img src="https://i.ytimg.com/vi/1QJd560ZEeY/maxresdefault.jpg" alt="karjat">
+                    <p>Karjat<br><span>Maharshtra, India</span></p>
+                </div>
+                <div class="slideDest">
+                    <img src="https://www.theparkhotels.com/images/site-specific/navi-mumbai/explore/navi_mumbai_city_banner.jpg" alt="navimumbai">
+                    <p>Navi Mumbai<br><span>Maharshtra, India</span></p>
+                </div>
+                <div class="slideDest">
+                    <img src="https://tse2.mm.bing.net/th?id=OIP.1C9UMmueUGBzmNDz2rf_3QHaEK&pid=Api&P=0&h=220" alt="candolim">
+                    <p>Candolim<br><span>Goa, India</span></p>
+                </div>
+                <div class="slideDest">
+                    <img src="https://static.javatpoint.com/tourist-places/images/tourist-places-in-alibag1.png" alt="alibag">
+                    <p>Alibaug<br><span>Maharshtra, India</span></p>
+                </div>
+                <div class="slideDest">
+                    <img src="https://wallpaperaccess.com/full/150694.jpg" alt="bangkok">
+                    <p>Bangkok<br><span>Bangkok Province, Thailand</span></p>
+                </div>
+                <div class="slideDest">
+                    <img src="https://www.tourmyindia.com/socialimg/calangute-beach-goa.jpg" alt="calangute">
+                    <p>Calangute<br><span>Goa, India</span></p>
+                </div>
+            </div>
+        </div>
+        <button id="nextBtn" class="scroll-btn">❯</button>
+    </div>
+
+    <div class="deals">
+        <div class="dealP">
+            <p>Last-minute weekend deals <br>
+                <span>Showing deals for: <b>14 Feb - 16 Feb</b></span>
+            </p>
+            <button>See all deals</button>
+        </div>
+        <div class="dealImages">
+            <div class="imgSlide">
+                <img src="https://images.unsplash.com/photo-1586611292717-f828b167408c?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="img1">
+                <p class="dp"><span>Dubai</span><br>Banyan Tree Dubai at Bluewaters</p>
+                <p class="dCost"><span>₹88,703</span> <del>₹110,879</del><br>
+                per night <br>₹218,277 total <br>includes taxes & fees</p>
+            </div>
+            <div class="imgSlide">
+                <img src="https://plus.unsplash.com/premium_photo-1661964402307-02267d1423f5?q=80&w=1373&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="img2">
+                <p class="dp"><span>Bengaluru</span><br>Adarsh Hamilton</p>
+                <p class="dCost"><span>₹6,913</span> <del>₹8,750</del><br>
+                per night <br>₹15,484 total <br>includes taxes & fees</p>
+            </div>
+            <div class="imgSlide">
+                <img src="https://plus.unsplash.com/premium_photo-1661963630748-3de7ab820570?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="img3">
+                <p class="dp"><span>Singapore</span><br>Pan Pacific Singapore</p>
+                <p class="dCost"><span>₹24,392</span> <del>₹30,489</del><br>
+                per night <br>₹58,491 total <br>includes taxes & fees</p>
+            </div>
+            <div class="imgSlide">
+                <img src="https://images.unsplash.com/photo-1547473078-cbab237054c0?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="img4">
+                <p class="dp"><span>London</span><br>St. James' Court, A Taj Hotel,London</p>
+                <p class="dCost"><span>₹25,528</span> <del>₹34,037</del><br>
+                per night <br>₹61,267 total <br>includes taxes & fees</p>
+            </div>
+            <div class="imgSlide">
+                <img src="https://plus.unsplash.com/premium_photo-1670076505453-b62b8cb214da?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="img5">
+                <p class="dp"><span>New York</span><br>Hotel Beacon</p>
+                <p class="dCost"><span>₹46,186</span> <del>₹69,978</del><br>
+                per night <br>₹103,310 total <br>includes taxes & fees</p>
+            </div>
+        </div>
+    </div>
+
+    <p class="packageHead">Explore holiday packages to popular destinations<br><span>
+    Prices found in the past 48 hours, based on two adults. Prices/availability subject to change. Click for updated prices.</span></p>
+    <div class="destType">
+        <button>Bali</button>
+        <button>Bangkok</button>
+        <button>Phuket</button>
+        <button >Goa</button>
+        <button>Male`</button>
+    </div>
+    <div class="underline2"></div>
+
+    <!-- footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="column">
+                <h4>Company</h4>
+                <a href="#">About us</a>
+                <a href="#">Jobs</a>
+                <a href="#">List your property</a>
+                <a href="#">Partnership</a>
+                <a href="#">Newsroom</a>
+            </div>
+            <div class="column">
+                <h4>Explore</h4>
+                <a href="#">India travel guide</a>
+                <a href="#">Hotels in India</a>
+                <a href="#">Holiday rentals in India</a>
+                <a href="#">Holiday packages in India</a>
+                <a href="#">Domestic flights</a>
+                <a href="#">Car hire in India</a>
+                <a href="#">All accommodation types</a>
+                <a href="#">Travel blog</a>
+            </div>
+            <div class="column">
+                <h4>Policies</h4>
+                <a href="#">Privacy</a>
+                <a href="#">Cookies</a>
+                <a href="#">Terms of use</a>
+                <a href="#">Vrbo terms and conditions</a>
+                <a href="#">Content guidelines and reporting content</a>
+            </div>
+            <div class="column">
+                <h4>Help</h4>
+                <a href="#">Support</a>
+                <a href="#">Change or cancel your booking</a>
+                <a href="#">Refund process and timelines</a>
+                <a href="#">Book a flight using an airline credit</a>
+                <a href="#">International travel documents</a>
+            </div>
+        </div>
+        <div class="underline"></div>
+        <div class="copyright">
+            <img src="https://images.trvl-media.com/media/content/expind/images/sg/secure.png" alt="">
+            <p>© 2025 Expedia, Inc., an Expedia Group company. All rights reserved. Expedia and the Expedia Logo are trademarks or registered trademarks of Expedia, Inc.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
