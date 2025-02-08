@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expedia Help Center</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        .search-bar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .search-bar input {
+            width: 80%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .search-bar button {
+            background-color: #005eff;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-left: 10px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        .grid div {
+            background: #f1f1f1;
+            padding: 20px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .promo {
+            display: flex;
+            align-items: center;
+            background: #e6f7ff;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .promo img {
+            width: 300px;
+            height: auto;
+            border-radius: 5px;
+        }
+        .promo-text {
+            flex: 1;
+            padding-left: 20px;
+        }
+        .promo h3 {
+            margin: 0;
+            font-size: 22px;
+        }
+        .promo p {
+            margin: 5px 0 0;
+            font-size: 16px;
+        }
+        .qr-code {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .qr-code img {
+            width: 150px;
+            height: 150px;
+            
+        }
+        .footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+        .footer a {
+            color: #f1f1f1;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="search-bar">
+            <input type="text" placeholder="How can we help?">
+            <button>Search</button>
+        </div>
+        
+        <h2>Explore help articles</h2>
+        
+        <div class="grid">
+            <div>✈️ Flight <span>&#x27A1;</span></div>
+            <div>💳 Refunds & Charges <span>&#x27A1;</span></div>
+            <div>🏨 Lodging <span>&#x27A1;</span></div>
+            <div>🎁 Packages <span>&#x27A1;</span></div>
+            <div>🚢 Cruise <span>&#x27A1;</span></div>
+            <div>🚗 Car <span>&#x27A1;</span></div>
+            <div>👤 Account <span>&#x27A1;</span></div>
+            <div>🛡️ Security <span>&#x27A1;</span></div>
+            <div>🔒 Privacy <span>&#x27A1;</span></div>
+            <div>⚠️ Travel Alerts <span>&#x27A1;</span></div>
+            <div>🏆 Loyalty & Rewards <span>&#x27A1;</span></div>
+            <div>🗺 Destination Services <span>&#x27A1;</span></div>
+        </div>
+        
+        <div class="promo">
+            <img src="https://a.travel-assets.com/mad-service/footer/bnaBanners/BEX_Footer.jpg" alt="Promo Image">
+            <div class="promo-text">
+                <h3>Go further with the Expedia app</h3>
+                <p>Save on select hotels and earn OneKeyCash on bookings in the app. Our app deals help you to save on trips so you can travel more and manage it all on the go.</p>
+                <p><strong>Scan the QR code with your device camera and download our app</strong></p>
+                <div class="qr-code">
+                    <img src="https://a.travel-assets.com/mad-service/qr-code/footer_qr_helpcenter/1_QR_FOOTER_HELPCENTER.png" alt="QR Code">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <p>&copy; 2024 Expedia, Inc. All rights reserved.</p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a> | <a href="#">Contact Us</a></p>
+    </div>
+</body>
+</html>
