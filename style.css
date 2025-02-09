@@ -1,0 +1,582 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+/* navbar */
+nav{
+    display: flex;
+    gap: 20px;
+    width:auto;
+    height:52px;
+    border: 1px solid rgb(211, 211, 211);
+    padding: 12px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+nav>img{
+    padding: 10px 0px;
+    margin-left: 50px;
+}
+.shopBtn,.engBtn{
+    display: flex;
+    width: auto;
+    background-color: transparent;
+    padding:0px 12px;
+    color: #191E3B;
+    font-size:14px;
+    border: none;
+    gap: 2px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.shopBtn>i,.engBtn>i{
+    padding: 22px 7px;
+}
+.appBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    width:auto;
+    height:35px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    margin:10px 0px;
+    margin-left: 20%;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.appBtn>i{
+    padding:5px 5px;
+    color: blue;
+}
+.appBtn:hover{
+    background-color: rgb(234, 241, 255);
+}
+.shopBtn:hover,.engBtn:hover,nav>a:hover,.signIn:hover,.mess:hover{
+    color: rgb(0, 77, 230);
+}
+nav>a{
+    text-decoration: none;
+    color: #191E3B;
+    font-size: 14px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.signIn{
+    width:auto;
+    color:#191E3B;
+    background-color:transparent;
+    padding: 2px 0px;
+    border: none;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* footer */
+footer{
+    margin-top: 10px;
+    display: grid;
+    height:auto;
+    width: auto;
+    border-radius: 20px;
+    background-color:#e3e6ee;
+    padding: 24px 12px 48px 24px;
+}
+.footer-container{
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+    padding:0px 30px;
+}
+.column{
+    width:auto;
+    height:100%;
+    padding: 2px 20px;
+}
+.mess{
+    margin:17px 2px;
+}
+.column>a{
+    text-decoration: none;
+    color: rgb(0, 110, 255);
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: block;
+    font-size: 12px;
+    padding: 6px 0px;
+}
+.underline{
+    width:90%;
+    height:0px;
+    border: 1px solid silver;
+    margin: 20px 30px;
+}
+.copyright>img{
+    margin: 15px 30px;
+}
+.copyright>p{
+    text-align: center;
+    font-size: 13px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 20px 0px;
+}
+.column>a:hover{
+    text-decoration: underline;
+    color:rgb(47, 137, 255);
+}
+.column>h4{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.toggle{
+    display: none;
+}
+@media (max-width:1260px) {
+    .appBtn{
+        margin-left: auto;
+    }
+}
+@media (max-width:980px) {
+    .engBtn,.property,.support{
+        display: none;
+    }
+    .toggle{
+        display:flex;
+        background-color: transparent;
+        color:rgb(1, 1, 19);
+        border: none;
+        font-size: 20px;
+        margin: 15px 0px;
+    }
+
+}
+@media (max-width:689px) {
+    .trip,.mess,.signIn{
+        display: none;
+    }
+}
+@media (max-width:635px) {
+    .shopBtn{
+        display: none;
+    }
+}
+@media (max-width:521px) {
+    .footer-container{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+@media (max-width:435px) {
+    .footer-container{
+        grid-template-columns:repeat(1,1fr);
+    }
+
+}
+@media (max-width:395px) {
+    .appBtn{
+        display: none;
+    }
+    .toggle{
+        margin-left: auto;
+    }
+}
+/* searchbar */
+.searchtravel{
+    width: auto;
+    height: auto;
+    margin: 70px 70px 50px 70px;
+    border: 1px solid rgb(212, 212, 212);
+    border-radius: 20px;
+}
+.travelsource{
+    display: flex;
+    gap: 20px;
+    width: auto;
+    height: auto;
+    padding: 20px 40% 20px 40%;
+}
+.travelsource>button{
+    background-color: transparent;
+    border: none;
+    color: #191E3B;
+    font-weight: 600;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.travelsource>button:hover{
+    text-decoration: underline;
+    color: #0058cc;
+}
+.underline1{
+    width:auto;
+    height:auto;
+    border: 1px solid rgb(235, 235, 235);
+}
+.bookings{
+    display: flex;
+    padding: 30px 10px;
+    gap:10px ; 
+    flex-wrap: wrap;
+}
+.whereto,.dates,.travellers{
+    height: 60px;
+    width: 350px;
+    display: flex;
+    border-radius: 10px;
+    border: 1px solid #191E3B;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.dates>i,.travellers>i,.whereto>i{
+    margin: 20px 15px;
+}
+.light{
+    color: #191E3B;
+
+}
+.light>span{
+    font-size: 12px;
+    color: #303b70;
+}
+.whereto p,.dates p,.travellers p{
+    color: #191E3B;
+}
+.searchBtn{
+    width:100px;
+    height:48px;
+    padding:10px 20px;
+    font-weight: 600;
+    border-radius: 25px;
+    background-color:#0068f0;
+    margin-top: 5px;
+    color:white;
+    font-size: 16px;
+    border: none;
+}
+.searchBtn:hover{
+    background-color:#0058cc;
+}
+.check{
+    margin:5px;
+    color: #191E3B;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.members{
+    display: flex;
+    gap: 20px;
+    width: 90%;
+    height: 50px;
+    color: white;
+    background-color:rgb(19, 19, 49);
+    border-radius:20px;
+    padding:8px 15px;
+    margin:40px 60px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.sign{
+    width: 110px;
+    height:30px;
+    border-radius:20px;
+    background-color:#0068f0;
+    padding:3px 8px;
+    color:white;
+    border: none;
+    margin: 10px 0px;
+    margin-left: auto;
+}
+.sign:hover{
+    background-color:#0057c9;
+}
+/* slide image */
+
+.scrollHead,.popularDest{
+    color:#191E3B;
+    font-size:30px;
+    font-weight: 600;
+    margin: 20px 100px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;
+}
+.slider-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin:10px 70px 30px 70px;
+}
+
+.image-slider {
+    overflow: hidden;
+    width:100%;
+    position: relative;
+}
+
+.slider-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    gap: 10px;
+}
+
+.slide {
+    min-width:230px;
+    transition: transform 0.3s ease-in-out;
+    height:320px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.slide img {
+    width: 100%;
+    height:100%;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.scroll-btn {
+    width:50px;
+    height:50px;
+    background-color:white;
+    color: #0068f0;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.scroll-btn:hover {
+    background-color: #daeaff;
+}
+.slide>p{
+    z-index: 1000;
+    color: #ffff;
+    position: absolute;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    font-weight:900;
+    bottom:5px;
+    left: 10px;
+}
+/* memberbox */
+.memberPrice{
+    width:90%;
+    height:500px;
+    margin: 70px 70px;
+    border-radius: 30px;
+    overflow: hidden;
+    position: relative
+}
+.memberPrice>img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+#priceBox{
+    width:400px;
+    height:250px;
+    border-radius:20px;
+    z-index: 1000;
+    background-color: white;
+    position: absolute;
+    bottom:100px;
+    left: 50px;
+    padding:2px 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+#priceBox>p:nth-child(1){
+    font-family:'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+#priceBox>p:nth-child(2){
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+}
+#priceBox>button{
+    width: 160px;
+    height:50px;
+    border-radius:30px;
+    background-color:#0068f0;
+    padding:3px 8px;
+    color:white;
+    border: none;
+    font-weight: bold;
+    font-size: 15px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#priceBox>button:hover{
+    background-color:#0059ce;
+}
+/* popularDest */
+
+.destType{
+    display: flex;
+    gap:20px;
+    width: auto;
+    height: auto;
+    margin: 20px 0px;
+    padding: 0px 100px;
+}
+.destType>button{
+    background-color: transparent;
+    border: none;
+    color: #191E3B;
+    font-size: 15px;
+    font-weight: 600;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.destType>button:hover{
+    text-decoration: underline;
+    color: #0056be;
+}
+.underline2{
+    width:auto;
+    height:auto;
+    border: 1px solid rgb(235, 235, 235);
+    margin: 10px 100px;
+}
+.destPhoto{
+    display: flex;
+    align-items: center;
+    position: relative;
+    max-width: 1200px;
+    width: 90%;
+    height: 250px;
+    overflow: hidden;
+    margin:10px 70px 30px 70px;
+}
+.dest1{
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+.dest2{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    gap:10px;
+}
+.slideDest{
+    min-width:250px;
+    transition: transform 0.3s ease-in-out;
+    height:200px;
+    border-radius:30px;
+    border: 1px solid silver;
+    position: relative;
+    overflow: hidden;
+}
+.slideDest img {
+    width: 100%;
+    height:65%;
+    object-fit:cover;
+}
+.slideDest>p{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    font-weight:600;
+    color: #191E3B;
+    padding-left:20px;
+}
+.slideDest>p>span{
+    font-size: 13px;
+    color: #303b70;
+}
+.scroll-btn {
+    width:50px;
+    height:50px;
+    background-color:white;
+    color: #0068f0;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#prevBtn{
+    display: none;
+}
+.scroll-btn:hover {
+    background-color: #daeaff;
+}
+.deals{
+    width:90%;
+    height: 650px;
+    border-radius: 40px;
+    margin: 70px 70px;
+    width: 90%;
+    background-image: url('https://images.unsplash.com/photo-1586446419781-0a504e8cca47?q=80&w=1575&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px 10px;
+}
+.dealP{
+    display: flex;
+}
+.dealP>p{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    font-weight:600;;
+    padding:70px 0px 5px 50px;
+    color: rgb(58, 18, 18);
+}
+.dealP>p>span{
+    font-size: 15px;
+    font-weight: 100;
+}
+.dealP>button{
+    margin:10% 10px 10px 50%;
+    width:auto;
+    height:30px;
+    background-color: white;
+    color: #006eff;
+    border-radius: 20px;
+    padding: 5px 20px;
+    font-weight: 600;
+    font-size: 15px;
+    border: none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.dealP>button:hover{
+    color: #0056be;
+}
+.dealImages{
+    display: flex;
+    width: 96%;
+    height: 60%;
+    /* border: 1px solid black; */
+    margin-left: auto;
+    gap: 10px;
+    overflow: hidden;
+}
+.imgSlide{
+    height: 100%;
+    width: 250px;
+    /* border: 1px solid pink; */
+}
+.imgSlide>img{
+    width:250px;
+    height:150px;
+    border-radius: 20px;
+}
+.dp{
+    font-size: 20px;
+    font-weight: 600;
+    color:rgb(255, 255, 255);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.dp>span{
+    font-size: 14px;
+    font-weight: 100;
+    color:rgb(255, 255, 255);
+}
+.dCost{
+    font-size: 14px;
+    font-weight: 600;
+    color:rgb(255, 255, 255);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.dCost>span{
+    font-size: 20px;
+    font-weight: 800;
+    color:rgb(255, 255, 255);
+}
+.packageHead{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    font-weight:600;
+    margin: 10px 100px;
+}
+.packageHead>span{
+    font-size: 13px;
+    font-weight: 400;
+}
