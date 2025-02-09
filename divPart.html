@@ -35,7 +35,7 @@
         .hotel-card {
             min-width: 25%;
             height: 350px;
-            background: linear-gradient(90deg, rgb(202, 222, 228) 0%, rgb(130, 197, 219) 35%, rgb(46, 96, 121) 100%);
+            background: linear-gradient(90deg, rgb(151, 189, 201) 0%, rgb(159, 208, 224) 35%, rgb(128, 172, 194) 100%);
             
 
             opacity: 1px;
@@ -161,14 +161,15 @@
             <span>Showing deals for:</span><span>14 Feb - 16 Feb</span>
             </div>
             <div>
-                <button>see all deals</button>
+                <button id="seeAllBtn">see all deals</button>
             </div>
 
         </div>
        
     </div>
 
-
+   
+    
 </body>
 </html>
 
@@ -182,8 +183,8 @@
                     return;
                 }
 
-                const hotels = Object.values(data).filter(hotel => hotel && hotel.image && hotel.image.length > 0);
-
+                const hotels = Object.values(data).filter(hotel => hotel && hotel.image && hotel.image.length > 0)
+                .slice(0, 10); 
                 if (hotels.length === 0) {
                     console.warn("No valid hotel data available.");
                     return;
@@ -244,4 +245,10 @@
     }
 
     fetchHotels();
+
+
+    const seeAllBtn=document.getElementById("seeAllBtn")
+    seeAllBtn.addEventListener("click",()=>{
+        window.location.href="weekendPage.html"
+    })
 </script>

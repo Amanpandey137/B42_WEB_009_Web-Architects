@@ -8,8 +8,8 @@ function fetchHotels() {
                 return;
             }
 
-            const hotels = Object.values(data).filter(hotel => hotel && hotel.image && hotel.image.length > 0);
-
+            const hotels = Object.values(data).filter(hotel => hotel && hotel.image && hotel.image.length > 0)
+            .slice(0, 14); 
             if (hotels.length === 0) {
                 console.warn("No valid hotel data available.");
                 return;
