@@ -1,0 +1,476 @@
+nav{
+    background-color: aqua;
+    width: 100%;
+    height: 50px;
+}
+#searchPart{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(218, 92, 92);
+}
+
+#mainDiv{
+    width: 100%;
+    /* background-color: aliceblue; */
+
+}
+#div1{
+    width: 90%;
+    height: 500px;
+    /* border: 1px solid black; */
+    margin: auto;
+    margin-top: 10px;
+    background-image: url("https://www.weissesroessl.at/files/images/weissesroessl/erleben/ausflugsziele/dachstein-eishoehlen/header-eishoehle-dachstein.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 100;
+}
+#div1>div:nth-child(1){
+    width: 9%;
+    /* height: 90px; */
+    box-sizing: content-box;
+    padding: 15px;
+    text-align: justify;
+    position: absolute;
+    left: 195px;
+    top: 95px;
+   font-style: oblique;
+   font-weight: bold;
+   border-radius: 25% 25% 1% 25%;
+   
+  background: linear-gradient(90deg, rgb(231, 231, 231) 0%, rgb(229, 232, 233) 35%, rgb(232, 234, 235) 100%);
+  opacity: 0.6;
+  color: rgb(25, 66, 100);
+  font-size: 14px;
+    
+}
+#div1>div:nth-child(2){
+            width: 1%;
+            height: 155px;
+            background: linear-gradient(90deg, rgb(165, 217, 230) 0%, rgb(210, 218, 221) 35%, rgb(232, 234, 235) 100%);
+            position: absolute;
+            left: 185px;
+            top: 110px;
+            border-radius: 15% 5% 1% 5%;
+
+}
+.heading{
+    width: 100%;
+    height: 150px;
+    margin: auto;
+    margin-top: 50px;
+    font-weight: bold;
+    /* padding: 10px; */
+    line-height: 8px;
+}
+.heading h1{
+    font-size: 5vw;
+}
+.heading p,.heading h3{
+    color: rgb(73, 71, 71);
+}
+main{
+    width: 80%;
+    /* background-color: aquamarine; */
+    margin: auto;
+}
+span{
+    font-weight: bold;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.hotel-container {
+    width: 85%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: auto;
+    gap: 10px;
+    margin-top: 5vh;
+ 
+}
+.hotel-container::-webkit-scrollbar{
+    display: none;
+}
+.hotel-card {
+    min-width: 25%;
+    /* height: 350px; */
+    background: linear-gradient(90deg, rgb(215, 227, 231) 0%, rgb(215, 224, 228) 35%, rgb(32, 63, 78) 100%);
+    
+
+    opacity: 1px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 10px;
+    
+    
+}
+
+.slider {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.slider button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.slider .left {
+    left: 10px;
+}
+
+.slider .right {
+    right: 10px;
+}
+
+.hotel-info {
+    text-align: center;
+    padding: 10px;
+}
+
+.hotel-info h3 {
+    margin: 5px 0;
+}
+
+.hotel-info p {
+    margin: 2px 0;
+    font-size: 14px;
+    color: rgb(20, 20, 20);
+}
+.intro {
+    width: 80%;
+    /* background-color: rgba(214, 34, 34, 0.9); */
+    padding: 15px;
+    border-radius: 10px;
+   margin-top: -400px;
+   display: flex;
+   position: absolute;
+   justify-content: space-between;
+   position: fixed;
+   
+   
+}
+   
+
+.intro h1 {
+    font-size: 25px;
+    
+    
+}
+
+.intro span {
+    font-size: 16px;
+    color: rgb(10, 10, 10);
+   
+}
+
+.intro button {
+    background-color: #00e1ff;
+    
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+nav{
+    display: flex;
+    gap: 20px;
+    width:auto;
+    position: sticky;
+    top: 0px;
+    z-index: 10000;
+    height:52px;
+    border: 1px solid rgb(211, 211, 211);
+    padding: 12px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+nav>img{
+    padding: 10px 0px;
+    margin-left: 50px;
+}
+.shopBtn,.engBtn{
+    display: flex;
+    width: auto;
+    background-color: transparent;
+    padding:0px 12px;
+    color: #191E3B;
+    font-size:14px;
+    border: none;
+    gap: 2px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.shopBtn>i,.engBtn>i{
+    padding: 22px 7px;
+}
+.appBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    width:auto;
+    height:35px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    margin:10px 0px;
+    margin-left: 20%;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.appBtn>i{
+    padding:5px 5px;
+    color: blue;
+}
+.appBtn:hover{
+    background-color: rgb(234, 241, 255);
+}
+.shopBtn:hover,.engBtn:hover,nav>a:hover,.signIn:hover,.mess:hover{
+    color: rgb(0, 77, 230);
+}
+nav>a{
+    text-decoration: none;
+    color: #191E3B;
+    font-size: 14px;
+    
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.signIn{
+    width:auto;
+    color:#191E3B;
+    background-color:transparent;
+    padding: 2px 0px;
+    border: none;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.searchtravel{
+    width: auto;
+    height: auto;
+    margin: 70px 70px 50px 70px;
+    border: 1px solid rgb(212, 212, 212);
+    border-radius: 20px;
+}
+.travelsource{
+    display: flex;
+    gap: 20px;
+    width: auto;
+    height: auto;
+    padding: 20px 40% 20px 40%;
+}
+.travelsource>button{
+    background-color: transparent;
+    border: none;
+    color: #191E3B;
+    font-weight: 600;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.travelsource>button:hover{
+    text-decoration: underline;
+    color: #0058CC;
+}
+.underline1{
+    width:auto;
+    height:auto;
+    border: 1px solid rgb(235, 235, 235);
+}
+.bookings{
+    display: flex;
+    padding: 30px 10px;
+    gap:10px ;
+    flex-wrap: wrap;
+}
+.whereto,.dates,.travellers{
+    height: 60px;
+    width: 350px;
+    display: flex;
+    border-radius: 10px;
+    border: 1px solid #191E3B;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.dates>i,.travellers>i,.whereto>i{
+    margin: 20px 15px;
+}
+.light{
+    color: #191E3B;
+}
+.light>span{
+    font-size: 12px;
+    color: #303B70;
+}
+.whereto p,.dates p,.travellers p{
+    color: #191E3B;
+}
+.searchBtn{
+    width:100px;
+    height:48px;
+    padding:10px 20px;
+    font-weight: 600;
+    border-radius: 25px;
+    background-color:#0068f0;
+    margin-top: 5px;
+    color:white;
+    font-size: 16px;
+    border: none;
+}
+.searchBtn:hover{
+    background-color:#0058cc;
+}
+.check{
+    margin:5px;
+    color: #191E3B;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+footer{
+    margin-top: 10px;
+    display: grid;
+    height:auto;
+    width: auto;
+    border-radius: 20px;
+    background-color:#e3e6ee;
+    padding: 24px 12px 48px 24px;
+}
+.footer-container{
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+    padding:0px 30px;
+}
+.column{
+    width:auto;
+    height:100%;
+    padding: 2px 20px;
+}
+.mess{
+    margin:17px 2px;
+}
+.column>a{
+    text-decoration: none;
+    color: rgb(0, 110, 255);
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: block;
+    font-size: 12px;
+    padding: 6px 0px;
+}
+.underline{
+    width:90%;
+    height:0px;
+    border: 1px solid silver;
+    margin: 20px 30px;
+}
+.copyright>img{
+    margin: 15px 30px;
+}
+.copyright>p{
+    text-align: center;
+    font-size: 13px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 20px 0px;
+}
+.column>a:hover{
+    text-decoration: underline;
+    color:rgb(47, 137, 255);
+}
+.column>h4{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.toggle{
+    display: none;
+}
+@media (max-width:1260px) {
+    .appBtn{
+        margin-left: auto;
+    }
+}
+@media (max-width:980px) {
+    .engBtn,.property,.support{
+        display: none;
+    }
+    .toggle{
+        display:flex;
+        background-color: transparent;
+        color:rgb(1, 1, 19);
+        border: none;
+        font-size: 20px;
+        margin: 15px 0px;
+    }
+}
+@media (max-width:689px) {
+    .trip,.mess,.signIn{
+        display: none;
+    }
+}
+@media (max-width:635px) {
+    .shopBtn{
+        display: none;
+    }
+}
+@media (max-width:521px) {
+    .footer-container{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+@media (max-width:435px) {
+    .footer-container{
+        grid-template-columns:repeat(1,1fr);
+    }
+}
+@media (max-width:395px) {
+    .appBtn{
+        display: none;
+    }
+    .toggle{
+        margin-left: auto;
+    }
+}
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:600px)and(max-width: 822px) {
+    .heading,h3{
+        font-size: 42px;
+        margin: 12px 0px 0px;
+    }
+  }
+  
